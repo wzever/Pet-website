@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.text-wap {
+				display: block;
+				word-break: break-all;
+				word-wrap: break-word;
+				white-space: pre-wrap;
+				padding: 0;
+				margin: 0;
+			}
+
+			.showbox {
+				width: 400px;
+				padding: 0;
+				margin: 0;
+				word-wrap: break-word;
+			}
+		</style>
+		<!-- All css here -->
+		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+		<link rel="stylesheet" href="/static/css/slick.css">
+		<link rel="stylesheet" href="/static/css/magnific-popup.css">
+		<link rel="stylesheet" href="/static/css/nice-select.css">
+		<link rel="stylesheet" href="/static/css/linearicons.css">
+		<link rel="stylesheet" href="/static/css/meanmenu.css">
+		<link rel="stylesheet" href="/static/css/default.css">
+		<link rel="stylesheet" href="/static/css/style.css">
+		<link rel="stylesheet" href="/static/css/responsive.css">
+				<!-- All js here -->
+	<script src="/static/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/static/js/popper.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/isotope.pkgd.min.js"></script>
+	<script src="/static/js/jquery.magnific-popup.min.js"></script>
+	<script src="/static/js/jquery.nice-select.min.js"></script>
+	<script src="/static/js/jquery.meanmenu.min.js"></script>
+	<script src="/static/js/jquery.counterup.min.js"></script>
+	<script src="/static/js/waypoints.min.js"></script>
+	<script src="/static/js/slick.min.js"></script>
+	<script src="/static/js/plugins.js"></script>
+	<script src="/static/js/main.js"></script>
+	<script src="/static/js/echarts.js"></script>
+	<script src="/static/js/jquery.js"></script>
+	</head>
+	<body style="height: 100%; margin: 0">
+		<header>
+            <div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3"> 
+                            <div class="logo">
+                                <img src="/static/img/logo/logo_cat_small2.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu f-right">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="home">首页</a>
+                                            
+                                        </li>
+                                        <li>
+                                            <a href="dog.html">宠物大全</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="dog.html">宠物狗</a>
+                                                </li>
+                                                <li>
+                                                    <a href="cat.html">宠物猫</a>
+                                                </li>
+                                                <li>
+                                                    <a href="other.html">其他宠物</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="service.html">宠物服务</a>
+                
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="service1.html">宠物医疗</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service2.html">宠物养护</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service3.html">宠物训练</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service4.html">宠物搞笑</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="map-polygon.html">数据可视化</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="map-polygon.html">宠物地图</a>
+                                                </li>
+                                                <li>
+                                                    <a href="map2.html">特征一览</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="AboutUs.html">关于我们</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="/about">想说的话</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/members">成员介绍</a>
+                                                </li>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+		<div id="container" style="height: 100%"></div>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/extension/dataTool.min.js">
+		</script>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js">
+		</script>
+
+		<script type="text/javascript" src="china.js"></script>
+		<script type="text/javascript" src="world.js"></script>
+
+		<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=d10XyiNPI5arGSup4sfQORmKFtDU1pg1">
+		</script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/extension/bmap.min.js">
+		</script>
+
+
+		<script type="text/javascript">
+			var dom = document.getElementById("container");
+			var myChart = echarts.init(dom);
+			var app = {};
+
+			var option;
+
+
+
+			var data = [{
+					name: '埃塞俄比亚',
+					value: 279,
+					nameAn: '兔猫,索马里猫,红阿比,阿比西尼亚猫'
+				},
+				{
+					name: '中国',
+					value: 279,
+					nameAn: '土猫,中华田园猫,中国狸花猫,黄狸猫,玳瑁色虎斑猫,大黄狗,西藏獒犬,中华田园犬,土狗,松狮,西施犬,京巴犬,冠毛犬,中国沙皮犬,大黄狗,北京犬,巴哥犬'
+				},
+				{
+					name: '英国',
+					value: 279,
+					nameAn: '金毛犬,重点色长毛猫,黄金猎犬,英国短毛猫,英国长毛猫,马恩岛猫,曼克斯猫,曼基康猫,腊肠猫,康沃尔帝王猫,柯尼斯卷毛猫,金吉拉猫,哈瓦那棕猫,德文帝王猫,德国莱克斯猫,短腿猫,德文卷毛猫,德文莱克斯猫,博美拉猫,英国可卡犬,英国跳猎犬,英国猎浣熊犬,英国玩具犬,英国赛特犬,约克夏梗,英国斗牛犬,锡利哈姆梗,西部高地白梗,喜乐蒂牧羊犬,万能梗,威尔士梗,玩具曼彻斯特犬,威尔士跳猎犬,田野小猎犬,斯达福,斯凯梗,设得兰群岛牧羊犬,史宾格犬,苏塞克斯猎犬,拳狮犬,平毛寻回犬,柯基犬威尔士柯基犬,帕尔森·罗塞尔梗,诺里奇梗,诺福克梗,挪威梗,牛头梗,马士提夫獒犬,美国猎狐犬,猎兔犬,猎水獭犬,老虎狗,拉布拉多,柯基犬,凯恩梗,柯利犬,卷毛寻回犬,杰克罗素梗,湖畔梗,刚毛猎狐梗,弗莱特寻回犬,斗牛獒犬,大獒,查理王小猎犬,博得猎狐犬,波音达,比格犬,贝林顿梗,边境梗,波多罗克梗,金毛寻回犬'
+				},
+				{
+					name: '德国',
+					value: 279,
+					nameAn: '德国牧羊犬,雪纳瑞,威玛犬,松鼠犬,史纳莎,腊肠犬,罗威纳犬,巨型雪纳瑞犬,猴头梗,德国刚毛波音达,德国短毛波音达,德国宾沙犬,杜宾犬,德国魏玛犬,博美犬, 艾芬品,'
+				},
+				{
+					name: '爱尔兰',
+					value: 279,
+					nameAn: '波兰德斯布比猎犬,波士顿梗, 爱尔兰雪达犬,爱尔兰梗,爱尔兰猎狼犬,爱尔兰软毛梗,爱尔兰峡谷梗,爱尔兰水猎犬,爱尔兰红白雪达犬'
+				},
+				{
+					name:'美国',
+					value:279,
+					nameAn:'加菲猫,玩偶猫,红骨猎浣熊犬,重点色短毛猫,重点色长毛猫,雪鞋猫,玩具虎猫,塞尔凯克卷毛猫,奇异猫,欧西猫,欧斯亚史烈斯猫,美国短毛猫,孟买猫,美国硬毛猫,美国刚毛猫,美国短尾猫,孟加拉豹猫,美国卷耳猫,褴褛猫,拉邦猫,加州闪亮猫,异国短毛猫,虎豹猫,虎皮猫,爪哇猫,巴厘猫,布娃娃猫,短毛波斯猫,长毛暹罗猫,布履阑珊猫,布偶猫,巴厘岛猫,奥西猫,玩具猎狐梗,树丛浣熊猎犬,山地犬,喜乐蒂牧羊犬,奇努克犬,Boykin Spaniel,普罗特猎犬,美国爱斯基摩犬,美国水猎犬,恶霸犬,斯塔福,可卡獚,黑褐猎浣熊犬,博伊金猎犬,布鲁克浣熊猎犬,比特犬,阿拉斯加雪橇犬,澳大利亚牧羊犬'
+				},
+				{
+					name:'加拿大',
+					value:279,
+					nameAn:'加拿大无毛猫,新斯科舍猎鸭寻猎犬,纽芬兰犬,威尔士猫,韦尔斯猫,斯芬克斯猫,塞尔特猫'
+				},
+				{
+					name:'法国',
+					value:279,
+					nameAn:'泰迪犬,贵宾犬,卷毛狗,沙特尔猫,卡尔特猫,迷你贝吉格里芬凡丁犬,鹿犬,罗秦犬,灵缇,罗得西亚脊背犬,卷毛比雄犬,哈瓦那犬,刚毛指示格里芬犬,法国狼犬,法国斗牛犬,短脚长身梗,大白熊犬,蝶耳犬,比熊,比利牛斯山犬,布列塔尼犬,巴吉度猎犬,比利牛斯牧羊犬,伯瑞犬'
+				},
+				{
+					name:'泰国',
+					value:279,
+					nameAn:'亚洲猫,西母猫,暹罗猫,泰国猫,科拉特猫,呵叻猫,东方短毛猫,泰国脊背犬'
+				},
+				{
+					name:'新加坡',
+					value:279,
+					nameAn:'新加坡猫'
+				},
+				{
+					name:'土耳其',
+					value:279,
+					nameAn:'土耳其梵猫,土耳其安哥拉猫,安纳托利亚牧羊犬'
+				},
+				{
+					name:'俄罗斯',
+					value:279,
+					nameAn:'西伯利亚猫,马耳他猫,俄罗斯蓝猫,彼得秃猫,阿契安吉蓝猫,萨摩耶,苏俄猎狼犬,黑俄罗斯梗'
+				},
+				{
+					name:'阿富汗',
+					value:279,
+					nameAn:'波斯猫,阿富汗猎犬'
+				},
+				{
+					name:'日本',
+					value:279,
+					nameAn:'日本短尾猫,日本截尾猫,银狐犬,日本狆,日本尖嘴犬,秋田犬,狐狸犬,柴犬,'
+				},
+				{
+					name:'挪威',
+					value:279,
+					nameAn:'挪威森林猫,挪威伦德猎犬,挪威布哈德犬,挪威猎鹿犬'
+				},
+				{
+					name:'意大利',
+					value:279,
+					nameAn:'纽波利顿,马尔济斯,卡斯罗,意大利灰狗,史毕诺犬,'
+				},
+				{
+					name:'葡萄牙',
+					value:279,
+					nameAn:'葡萄牙水犬'
+				},
+				{
+					name:'伊朗',
+					value:279,
+					nameAn:'萨路基猎犬'
+				},
+				{
+					name:'瑞士',
+					value:279,
+					nameAn:'圣伯纳德犬,大瑞士山地犬,伯尔尼兹山地犬'
+				},
+				{
+					name:'丹麦',
+					value:279,
+					nameAn:'大丹犬,德国獒犬'
+				},
+				{
+					name:'比利时',
+					value:279,
+					nameAn:'比熊,比利时特伏丹犬,布鲁塞尔格里芬犬,寻血猎犬,西帕基犬,马犬'
+				},
+				{
+					name: '埃及',
+					value: 279,
+					nameAn: '萨卢基犬,法老王猫,埃及猫,伊比赞猎犬'
+				},
+				{
+					name:'澳大利亚',
+					value:279,
+					nameAn:'丝毛梗,澳大利亚牧牛犬,澳大利亚梗'
+				},
+				{
+					name:'缅甸',
+					value:279,
+					nameAn:'缅甸圣猫,缅甸短毛猫,伯曼猫'
+				},
+				{
+					name:'葡萄牙',
+					value:279,
+					nameAn:'小型葡萄牙波登可犬'
+				},
+				{
+					name:'匈牙利',
+					value:279,
+					nameAn:'维希拉猎犬,库瓦兹犬,墩布狗,波利犬,'
+				},
+				{
+					name:'肯尼亚',
+					value:279,
+					nameAn:'肯尼亚猫,非洲短毛猫'
+				},
+				{
+					name:'西班牙',
+					value:279,
+					nameAn:'西班牙小猎犬,'
+				},
+				{
+					name:'瑞典',
+					value:279,
+					nameAn:'瑞典柯基犬'
+				},
+				{
+					name:'墨西哥',
+					value:279,
+					nameAn:'墨西哥无毛犬'
+				},
+				{
+					name:'捷克共和国',
+					value:279,
+					nameAn:'捷克梗'
+				},
+				{
+					name:'斯洛伐克',
+					value:279,
+					nameAn:'捷克梗'
+				},
+				{
+					name:'波兰',
+					value:279,
+					nameAn:'波兰低地牧羊犬'
+				},
+				{
+					name:'南斯拉夫',
+					value:279,
+					nameAn:'斑点犬'
+				},
+				{
+					name:'巴西',
+					value:279,
+					nameAn:'巴西菲勒犬'
+				},
+				{
+					name:'阿根廷',
+					value:279,
+					nameAn:'阿根廷獒'
+				},
+				{
+					name:'冰岛',
+					value:279,
+					nameAn:'冰岛牧羊犬'
+				},
+				{
+					name:'以色列',
+					value:279,
+					nameAn:'迦南犬'
+				},
+				{
+					name:'荷兰',
+					value:279,
+					nameAn:'荷兰毛狮犬'
+				},
+				{
+					name:'芬兰',
+					value:279,
+					nameAn:'芬兰波美拉尼亚丝毛狗,芬兰拉普猎犬'
+				},
+				{
+					name:'阿根廷',
+					value:279,
+					nameAn:'杜高犬'
+				},
+				{
+					name:'中国山东',
+					value:279,
+					nameAn:'沙皮犬,墨界黑狼犬,莱州红犬,山东狮子猫,临清狮猫'
+				},
+				{
+					name:'中国西藏',
+					value:279,
+					nameAn:'西藏梗,西藏猎犬,拉萨犬'
+				},
+				{
+					name:'英国苏格兰',
+					value:279,
+					nameAn:'苏格兰折耳猫,高地折耳猫,苏格兰梗,苏格兰猎鹿犬,边境柯利'
+				},
+				{
+					name:'美国缅因州',
+					value:279,
+					nameAn:'缅因库恩猫,缅因猫,浣熊猫'
+				},
+			];
+				
+			var geoCoordMap = {
+				'阿富汗': [67.709953, 33.93911],
+				'安哥拉': [17.873887, -11.202692],
+				'阿尔巴尼亚': [20.168331, 41.153332],
+				'阿联酋': [53.847818, 23.424076],
+				'阿根廷': [-63.61667199999999, -38.416097],
+				'亚美尼亚': [45.038189, 40.069099],
+				'法属南半球和南极领地': [69.348557, -49.280366],
+				'澳大利亚': [133.775136, -25.274398],
+				'奥地利': [14.550072, 47.516231],
+				'阿塞拜疆': [47.576927, 40.143105],
+				'布隆迪': [29.918886, -3.373056],
+				'比利时': [4.469936, 50.503887],
+				'贝宁': [2.315834, 9.30769],
+				'布基纳法索': [-1.561593, 12.238333],
+				'孟加拉国': [90.356331, 23.684994],
+				'保加利亚': [25.48583, 42.733883],
+				'巴哈马': [-77.39627999999999, 25.03428],
+				'波斯尼亚和黑塞哥维那': [17.679076, 43.915886],
+				'白俄罗斯': [27.953389, 53.709807],
+				'伯利兹': [-88.49765, 17.189877],
+				'百慕大': [-64.7505, 32.3078],
+				'玻利维亚': [-63.58865299999999, -16.290154],
+				'巴西': [-51.92528, -14.235004],
+				'文莱': [114.727669, 4.535277],
+				'不丹': [90.433601, 27.514162],
+				'博茨瓦纳': [24.684866, -22.328474],
+				'中非共和国': [20.939444, 6.611110999999999],
+				'加拿大': [-106.346771, 56.130366],
+				'瑞士': [8.227511999999999, 46.818188],
+				'智利': [-71.542969, -35.675147],
+				'中国': [104.195397, 35.86166],
+				'象牙海岸': [-5.547079999999999, 7.539988999999999],
+				'喀麦隆': [12.354722, 7.369721999999999],
+				'刚果民主共和国': [21.758664, -4.038333],
+				'刚果共和国': [15.827659, -0.228021],
+				'哥伦比亚': [-74.297333, 4.570868],
+				'哥斯达黎加': [-83.753428, 9.748916999999999],
+				'古巴': [-77.781167, 21.521757],
+				'北塞浦路斯': [33.429859, 35.126413],
+				'塞浦路斯': [33.429859, 35.126413],
+				'捷克共和国': [15.472962, 49.81749199999999],
+				'德国': [10.451526, 51.165691],
+				'吉布提': [42.590275, 11.825138],
+				'丹麦': [9.501785, 56.26392],
+				'多明尼加共和国': [-70.162651, 18.735693],
+				'阿尔及利亚': [1.659626, 28.033886],
+				'厄瓜多尔': [-78.18340599999999, -1.831239],
+				'埃及': [30.802498, 26.820553],
+				'厄立特里亚': [39.782334, 15.179384],
+				'西班牙': [-3.74922, 40.46366700000001],
+				'爱沙尼亚': [25.013607, 58.595272],
+				'埃塞俄比亚': [40.489673, 9.145000000000001],
+				'芬兰': [25.748151, 61.92410999999999],
+				'斐': [178.065032, -17.713371],
+				'福克兰群岛': [-59.523613, -51.796253],
+				'法国': [2.213749, 46.227638],
+				'加蓬': [11.609444, -0.803689],
+				'英国': [-3.435973, 55.378051],
+				'格鲁吉亚': [-82.9000751, 32.1656221],
+				'加纳': [-1.023194, 7.946527],
+				'几内亚': [-9.696645, 9.945587],
+				'冈比亚': [-15.310139, 13.443182],
+				'几内亚比绍': [-15.180413, 11.803749],
+				'赤道几内亚': [10.267895, 1.650801],
+				'希腊': [21.824312, 39.074208],
+				'格陵兰': [-42.604303, 71.706936],
+				'危地马拉': [-90.23075899999999, 15.783471],
+				'法属圭亚那': [-53.125782, 3.933889],
+				'圭亚那': [-58.93018, 4.860416],
+				'洪都拉斯': [-86.241905, 15.199999],
+				'克罗地亚': [15.2, 45.1],
+				'海地': [-72.285215, 18.971187],
+				'匈牙利': [19.503304, 47.162494],
+				'印尼': [113.921327, -0.789275],
+				'爱尔兰': [-8.24389, 53.41291],
+				'伊朗': [53.688046, 32.427908],
+				'伊拉克': [43.679291, 33.223191],
+				'冰岛': [-19.020835, 64.963051],
+				'以色列': [34.851612, 31.046051],
+				'意大利': [12.56738, 41.87194],
+				'牙买加': [-77.297508, 18.109581],
+				'约旦': [36.238414, 30.585164],
+				'日本': [138.252924, 36.204824],
+				'哈萨克斯坦': [66.923684, 48.019573],
+				'肯尼亚': [37.906193, -0.023559],
+				'吉尔吉斯斯坦': [74.766098, 41.20438],
+				'柬埔寨': [104.990963, 12.565679],
+				'韩国': [127.766922, 35.907757],
+				'科索沃': [20.902977, 42.6026359],
+				'科威特': [47.481766, 29.31166],
+				'老挝': [102.495496, 19.85627],
+				'黎巴嫩': [35.862285, 33.854721],
+				'利比里亚': [-9.429499000000002, 6.428055],
+				'利比亚': [17.228331, 26.3351],
+				'斯里兰卡': [80.77179699999999, 7.873053999999999],
+				'莱索托': [28.233608, -29.609988],
+				'立陶宛': [23.881275, 55.169438],
+				'卢森堡': [6.129582999999999, 49.815273],
+				'拉脱维亚': [24.603189, 56.879635],
+				'摩洛哥': [-7.092619999999999, 31.791702],
+				'摩尔多瓦': [28.369885, 47.411631],
+				'马达加斯加': [46.869107, -18.766947],
+				'墨西哥': [-102.552784, 23.634501],
+				'马其顿': [21.745275, 41.608635],
+				'马里': [-3.996166, 17.570692],
+				'缅甸': [95.956223, 21.913965],
+				'黑山': [19.37439, 42.708678],
+				'蒙古': [103.846656, 46.862496],
+				'莫桑比克': [35.529562, -18.665695],
+				'毛里塔尼亚': [-10.940835, 21.00789],
+				'马拉维': [34.301525, -13.254308],
+				'马来西亚': [101.975766, 4.210484],
+				'纳米比亚': [18.49041, -22.95764],
+				'新喀里多尼亚': [165.618042, -20.904305],
+				'尼日尔': [8.081666, 17.607789],
+				'尼日利亚': [8.675277, 9.081999],
+				'尼加拉瓜': [-85.207229, 12.865416],
+				'荷兰': [5.291265999999999, 52.132633],
+				'挪威': [8.468945999999999, 60.47202399999999],
+				'尼泊尔': [84.12400799999999, 28.394857],
+				'新西兰': [174.885971, -40.900557],
+				'阿曼': [55.923255, 21.512583],
+				'巴基斯坦': [69.34511599999999, 30.375321],
+				'巴拿马': [-80.782127, 8.537981],
+				'秘鲁': [-75.015152, -9.189967],
+				'菲律宾': [121.774017, 12.879721],
+				'巴布亚新几内亚': [143.95555, -6.314992999999999],
+				'波兰': [19.145136, 51.919438],
+				'波多黎各': [-66.590149, 18.220833],
+				'北朝鲜': [127.510093, 40.339852],
+				'葡萄牙': [-8.224454, 39.39987199999999],
+				'巴拉圭': [-58.443832, -23.442503],
+				'卡塔尔': [51.183884, 25.354826],
+				'罗马尼亚': [24.96676, 45.943161],
+				'俄罗斯': [105.318756, 61.52401],
+				'卢旺达': [29.873888, -1.940278],
+				'西撒哈拉': [-12.885834, 24.215527],
+				'沙特阿拉伯': [45.079162, 23.885942],
+				'苏丹': [30.217636, 12.862807],
+				'南苏丹': [31.3069788, 6.876991899999999],
+				'塞内加尔': [-14.452362, 14.497401],
+				'所罗门群岛': [160.156194, -9.64571],
+				'塞拉利昂': [-11.779889, 8.460555],
+				'萨尔瓦多': [-88.89653, 13.794185],
+				'索马里兰': [46.8252838, 9.411743399999999],
+				'索马里': [46.199616, 5.152149],
+				'塞尔维亚共和国': [21.005859, 44.016521],
+				'苏里南': [-56.027783, 3.919305],
+				'斯洛伐克': [19.699024, 48.669026],
+				'斯洛文尼亚': [14.995463, 46.151241],
+				'瑞典': [18.643501, 60.12816100000001],
+				'斯威士兰': [31.465866, -26.522503],
+				'叙利亚': [38.996815, 34.80207499999999],
+				'乍得': [18.732207, 15.454166],
+				'多哥': [0.824782, 8.619543],
+				'泰国': [100.992541, 15.870032],
+				'塔吉克斯坦': [71.276093, 38.861034],
+				'土库曼斯坦': [59.556278, 38.969719],
+				'东帝汶': [125.727539, -8.874217],
+				'特里尼达和多巴哥': [-61.222503, 10.691803],
+				'突尼斯': [9.537499, 33.886917],
+				'土耳其': [35.243322, 38.963745],
+				'坦桑尼亚联合共和国': [34.888822, -6.369028],
+				'乌干达': [32.290275, 1.373333],
+				'乌克兰': [31.16558, 48.379433],
+				'乌拉圭': [-55.765835, -32.522779],
+				'美国': [-95.712891, 37.09024],
+				'乌兹别克斯坦': [64.585262, 41.377491],
+				'委内瑞拉': [-66.58973, 6.42375],
+				'越南': [108.277199, 14.058324],
+				'瓦努阿图': [166.959158, -15.376706],
+				'西岸': [35.3027226, 31.9465703],
+				'也门': [48.516388, 15.552727],
+				'南非': [22.937506, -30.559482],
+				'赞比亚': [27.849332, -13.133897],
+				'津巴布韦': [29.154857, -19.015438],
+				'科摩罗': [43.872219, -11.875001],
+				'印度尼西亚': [106.515414, -6.103040],
+				'印度': [78.96288, 20.593684],
+				'中国山东':[117.00000,36.65000],
+				'中国西藏':[91.11000,29.97000],
+				'英国苏格兰':[-5.00000,56.00000],
+				'美国缅因州':[-69.00000,45.00000]
+			};
+			var convertData = function(data) {
+				var res = [];
+				for (var i = 0; i < data.length; i++) {
+					var geoCoord = geoCoordMap[data[i].name];
+					if (geoCoord) {
+						res.push({
+							name: data[i].name,
+							value: geoCoord.concat(data[i].value),
+							nameAn: data[i].nameAn
+
+						});
+					}
+				}
+				return res;
+			};
+
+			function renderItem(params, api) {
+				var coords = [
+					//    [116.7, 39.53],
+					//    [103.73, 36.03],
+					//    [112.91, 27.87],
+					//    [120.65, 28.01],
+					//    [119.57, 39.95],
+					// [120.57, 40.32],
+					// [117.27, 31.86]
+				];
+				var points = [];
+				for (var i = 0; i < coords.length; i++) {
+					points.push(api.coord(coords[i]));
+				}
+				var color = api.visual('color');
+				return {
+					type: 'polygon',
+					shape: {
+						points: echarts.graphic.clipPointsByRect(points, {
+							x: params.coordSys.x,
+							y: params.coordSys.y,
+							width: params.coordSys.width,
+							height: params.coordSys.height
+						})
+					},
+					style: api.style({
+						fill: color,
+						stroke: echarts.color.lift(color)
+					})
+				};
+			}
+			option = {
+				backgroundColor: 'transparent',
+				title: {
+					//地图顶部文字说明 
+					text: '世界宠物统计',
+					subtext: '',
+					sublink: '',
+					left: 'center',
+					textStyle: {
+						color: '#fff'
+					}
+				},
+				tooltip: {
+					trigger: 'item'
+				},
+				bmap: {
+					center: [104.114129, 37.550339],
+					zoom: 1,
+					roam: true,
+					mapStyle: {
+						styleJson: [{
+								featureType: 'water',
+								elementType: 'all',
+								stylers: {
+									color: '#044161'
+								}
+							},
+							{
+								featureType: 'land',
+								elementType: 'all',
+								stylers: {
+									color: '#004981'
+								}
+							},
+							{
+								featureType: 'boundary',
+								elementType: 'geometry',
+								stylers: {
+									color: '#064f85'
+								}
+							},
+							{
+								featureType: 'railway',
+								elementType: 'all',
+								stylers: {
+									visibility: 'off'
+								}
+							},
+							{
+								featureType: 'highway',
+								elementType: 'geometry',
+								stylers: {
+									color: '#004981'
+								}
+							},
+							{
+								featureType: 'highway',
+								elementType: 'geometry.fill',
+								stylers: {
+									color: '#005b96',
+									lightness: 1
+								}
+							},
+							{
+								featureType: 'highway',
+								elementType: 'labels',
+								stylers: {
+									visibility: 'off'
+								}
+							},
+							{
+								featureType: 'arterial',
+								elementType: 'geometry',
+								stylers: {
+									color: '#004981'
+								}
+							},
+							{
+								featureType: 'arterial',
+								elementType: 'geometry.fill',
+								stylers: {
+									color: '#00508b'
+								}
+							},
+							{
+								featureType: 'poi',
+								elementType: 'all',
+								stylers: {
+									visibility: 'off'
+								}
+							},
+							{
+								featureType: 'green',
+								elementType: 'all',
+								stylers: {
+									color: '#056197',
+									visibility: 'off'
+								}
+							},
+							{
+								featureType: 'subway',
+								elementType: 'all',
+								stylers: {
+									visibility: 'off'
+								}
+							},
+							{
+								featureType: 'manmade',
+								elementType: 'all',
+								stylers: {
+									visibility: 'off'
+								}
+							},
+							{
+								featureType: 'local',
+								elementType: 'all',
+								stylers: {
+									visibility: 'off'
+								}
+							},
+							{
+								featureType: 'arterial',
+								elementType: 'labels',
+								stylers: {
+									visibility: 'off'
+								}
+							},
+							{
+								featureType: 'boundary',
+								elementType: 'geometry.fill',
+								stylers: {
+									color: '#029fd4'
+								}
+							},
+							{
+								featureType: 'building',
+								elementType: 'all',
+								stylers: {
+									color: '#1a5787'
+								}
+							},
+							{
+								featureType: 'label',
+								elementType: 'all',
+								stylers: {
+									visibility: 'off'
+								}
+							}
+						]
+					}
+				},
+				tooltip: { //  每个站点的显示信息
+					trigger: 'item',
+					formatter: function(params) { //  params是数组array里每个项
+						return "<div class='showbox'>所属区域：" + params.name + "<br/>动物名称：" + '<p class="text-wap" >' +
+							params.data.nameAn + '</p></div>';
+						// return "所属区域：" + params.name + "<br/>动物名称：" + params.data.nameAn + "<br>经度：" + params.value[1] + "<br/>纬度：" + params.value[0] + "<br/>"
+					}
+				},
+				series: [{
+						name: '',
+						type: 'effectScatter',
+						coordinateSystem: 'bmap',
+						data: convertData(
+							data.sort(function(a, b) {
+								return b.value - a.value;
+							}).slice(0, 100)
+						),
+						encode: {
+							value: 2
+						},
+						symbolSize: function(val) {
+							return val[2] / 10;
+						},
+						showEffectOn: 'emphasis',
+						rippleEffect: {
+							brushType: 'stroke'
+						},
+						hoverAnimation: true,
+						label: {
+							formatter: '{b}',
+							position: 'right',
+							show: true
+						},
+
+						itemStyle: {
+							color: '#f4e925',
+							shadowBlur: 10,
+							shadowColor: '#333'
+						},
+						zlevel: 1
+					},
+					{
+						type: 'custom',
+						coordinateSystem: 'bmap',
+						renderItem: renderItem,
+						itemStyle: {
+							opacity: 0.5
+						},
+						animation: false,
+						silent: true,
+						data: [0],
+						z: -10
+					}
+				]
+			};
+
+			if (option && typeof option === 'object') {
+				myChart.setOption(option);
+			}
+		</script>
+
+		                        <!-- footer start -->
+								<footer class="black-bg">
+									<div class="widget-area pt-70 pb-30">
+										<div class="container">
+											<div class="row">
+												<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+													<div class="footer-widget" >
+														<img class="mb-30" src="/static/img/logo/logo-white.png" alt="">
+														<p style="color: whitesmoke;">Ocean turns converted,</p>
+														<p style="color: whitesmoke;;">where beloved fish dwell.</p>
+													</div>
+												</div>
+												<div class="col-xl-2 col-lg-2 col-md-6 mb-30">
+												</div>
+												<div class="col-xl-2 col-lg-2 col-md-6 mb-30 d-lg-none d-xl-block">
+													<div class="footer-widget">
+														<h3>Site links</h3>
+														<ul class="footer-link">
+															<li ><a href="/home" style="color: whitesmoke;">首页</a></li>
+															<li><a href="/dog" style="color: whitesmoke;">宠物大全</a></li>
+															<li><a href="/service" style="color: whitesmoke;">宠物服务</a></li>
+															<li><a href="/map-polygon" style="color: whitesmoke;">数据可视</a></li>
+															<li><a href="/about" style="color: whitesmoke;">关于我们</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-xl-4 col-lg-5 col-md-6 mb-30">
+													<div class="footer-widget">
+														<h3>Contact Us</h3>
+														<ul class="footer-info">
+															<li style="color: aqua;">Great tribute to Group 6</li>
+															<li style="color: aquamarine;">who built the site with joint efforts.</li>
+															<li style="color: cornsilk;">Shanghai Jiao Tong University</li>
+															<li style="color: cornsilk;">No.800, Dongchuan Road, Shanghai, China</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="copyright-area pt-25 pb-25">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-6 col-md-12">
+												</div>
+												<div class="col-lg-6 col-md-12">
+													<div class="footer-menu text-center  text-lg-right">
+														<nav>
+															<ul>
+																<li><a href="#" style="color: gainsboro;"> Introduction to Engineering for Electronic Information (Class B)</a></li>
+																<li><a href="#" style="color: gainsboro;"> 电类工程导论（B类）课程作业，谢绝他用</a></li>
+															</ul>
+														</nav>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</footer>
+	</body>
+</html>

@@ -1,0 +1,254 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/static/css/slick.css">
+        <link rel="stylesheet" href="/static/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static/css/meanmenu.css">
+        <link rel="stylesheet" href="/static/css/nice-select.css">
+        <link rel="stylesheet" href="/static/css/default.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/responsive.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-bottom-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <img src="/static/img/logo/logo_cat_small2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu f-right">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="home">首页</a>
+                                            
+                                        </li>
+                                        <li>
+                                            <a href="dog.html">宠物大全</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="dog.html">宠物狗</a>
+                                                </li>
+                                                <li>
+                                                    <a href="cat.html">宠物猫</a>
+                                                </li>
+                                                <li>
+                                                    <a href="other.html">其他宠物</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="service.html">宠物服务</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="service1.html">宠物医疗</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service2.html">宠物养护</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service3.html">宠物训练</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service4.html">宠物搞笑</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="map-polygon.html">数据可视化</a>
+                                        </li>
+                                        <li>
+                                            <a href="AboutUs.html">关于我们</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="/about">想说的话</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/members">成员介绍</a>
+                                                </li>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper-box p-0">
+
+            <div class="page-title-area pt-160 pb-160" data-background="/static/img/bg/page-title.jpg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title text-center">
+                                <h1>{{data[0]}}</h1>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item">
+                                            <a href="home.html"></a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">{{data[0]}}</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-blog-area gray-bg pt-120 pb-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 blog-post-items">
+                            <div class="blog-wrapper mb-40">
+                                <div class="blog-thumb">
+                                    <a href="blog-details.html">
+                                        <img src="{{data[2]}}" alt="" />
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <h2 class="blog-title">
+                                        <a href="service-details.html">{{data[0]}}</a>
+                                    </h2>
+                                    <p>{{data[1]}}</p>
+                                </div>
+                                <div class="post-comments-form pt-40" style="float: left;">
+                                    <div class="details-title mb-30">
+                                        <h2>我的留言</h2>
+                                    </div>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your Comments"></textarea>
+                                                <button class="btn brand-btn" type="submit">发表评论</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-lg-4 sidebar-blog right-side">
+                        <div class="widget">
+                            <h4 class="widget-title">Search here</h4>
+                            <div class="sidebar-form">
+                                <form action="service{{name}}.html" method='post'>
+                                    <input type="text" placeholder="关键字或者页码（大于0小于30）" name='page'/>
+                                    <button type="submit">
+                                        <span class="lnr lnr-magnifier"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>  
+                        <div class="widget">
+                            <h4 class="widget-title">相关文章</h4>
+                            <div class="sidebar-rc-post">
+                                {%for otherdata0 in otherdata %}
+                                <ul>
+                                    <li>
+                                        <div class="rc-post-thumb">
+                                            <a href="service-details?name={{name}}&id={{otherdata0[3]}}">
+                                                <img src="{{otherdata0[2]}}" alt="" width='90px'/>
+                                            </a>
+                                        </div>
+                                        <div class="rc-post-content">
+                                            <h4>
+                                                <a href="service-details?name={{name}}&id={{otherdata0[3]}}">{{otherdata0[0]}}</a>
+                                            </h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </br>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    
+            <footer class="black-bg">
+                <div class="widget-area pt-70 pb-30">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget" >
+                                    <img class="mb-30" src="/static/img/logo/logo-white.png" alt="">
+                                    <p style="color: whitesmoke;">Ocean turns converted,</p>
+                                    <p style="color: whitesmoke;;">where beloved fish dwell.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-6 mb-30 d-lg-none d-xl-block">
+                                <div class="footer-widget">
+                                    <h3>Site links</h3>
+                                    <ul class="footer-link">
+                                        <li ><a href="/home" style="color: whitesmoke;">首页</a></li>
+                                        <li><a href="/dog" style="color: whitesmoke;">宠物大全</a></li>
+                                        <li><a href="/service" style="color: whitesmoke;">宠物服务</a></li>
+                                        <li><a href="/map-polygon" style="color: whitesmoke;">数据可视</a></li>
+                                        <li><a href="/about" style="color: whitesmoke;">关于我们</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <h3>Contact Us</h3>
+                                    <ul class="footer-info">
+                                        <li style="color: aqua;">Great tribute to Group 6</li>
+                                        <li style="color: aquamarine;">who built the site with joint efforts.</li>
+                                        <li style="color: cornsilk;">Shanghai Jiao Tong University</li>
+                                        <li style="color: cornsilk;">No.800, Dongchuan Road, Shanghai, China</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area pt-25 pb-25">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="footer-menu text-center  text-lg-right">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#" style="color: gainsboro;"> Introduction to Engineering for Electronic Information (Class B)</a></li>
+                                            <li><a href="#" style="color: gainsboro;"> 电类工程导论（B类）课程作业，谢绝他用</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="/static/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="/static/js/popper.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/isotope.pkgd.min.js"></script>
+        <script src="/static/js/jquery.magnific-popup.min.js"></script>
+        <script src="/static/js/jquery.meanmenu.min.js"></script>
+        <script src="/static/js/jquery.nice-select.min.js"></script>
+        <script src="/static/js/jquery.counterup.min.js"></script>
+        <script src="/static/js/waypoints.min.js"></script>
+        <script src="/static/js/slick.min.js"></script>
+        <script src="/static/js/plugins.js"></script>
+        <script src="/static/js/main.js"></script>
+    </body>
+</html>

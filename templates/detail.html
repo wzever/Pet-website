@@ -1,0 +1,571 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/static/css/slick.css">
+        <link rel="stylesheet" href="/static/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static/css/nice-select.css">
+        <link rel="stylesheet" href="/static/css/linearicons.css">
+        <link rel="stylesheet" href="/static/css/meanmenu.css">
+        <link rel="stylesheet" href="/static/css/default.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/responsive.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-bottom-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <img src="/static/img/logo/logo_cat_small2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu f-right">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="home">首页</a>
+                                            
+                                        </li>
+                                        <li>
+                                            <a href="dog.html">宠物大全</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="dog.html">宠物狗</a>
+                                                </li>
+                                                <li>
+                                                    <a href="cat.html">宠物猫</a>
+                                                </li>
+                                                <li>
+                                                    <a href="other.html">其他宠物</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="service.html">宠物服务</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="service1.html">宠物医疗</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service2.html">宠物养护</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service3.html">宠物训练</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service4.html">宠物搞笑</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="map-polygon.html">数据可视化</a>
+                                        </li>
+                                        <li>
+                                            <a href="AboutUs.html">关于我们</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="/about">想说的话</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/members">成员介绍</a>
+                                                </li>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper-box p-0">
+
+            <div class="page-title-area pt-210 pb-210" data-background="/static/img/bg/page-title.jpg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title text-center">
+                                <h1>{{info[1]}}</h1>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item">
+                                            <h3 style="color: aliceblue;">{{info[4]}}</h3>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-blog-area gray-bg pt-50 pb-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 blog-post-items">
+                            <div class="blog-wrapper mb-40">
+                                <div class="meta-info">
+                                    <ul>
+                                        {% if info[2]=='犬' %}
+                                        <a class="posts-time" href="/dog.html"><<犬类大全</a>
+                                        {% endif %}
+                                        {% if info[2]=='猫' %}
+                                        <a class="posts-time" href="/cat.html"><<猫类大全</a>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                                <div class="blog-content">
+                                    <h2 class="blog-title" style="font-size: xx-large;">
+                                        {{info[1]}}
+                                    </h2>
+                                    <div style="text-align: center;">
+                                        <br>
+                                      <img src="{{img}}"/>
+                                    </div>
+                                    <br>
+                                    <h2 class="blog-title blog-title-sm">基本特征</h2>
+                                {% if info[2]=='犬' or info[2]=='猫' %}
+                                    <div>
+                                    <ul style="width: 580px;">
+                                    <li style="width: 280px;float: left;display: block;">中文名：{{info[1]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">别名：{{info[3]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">外文名：{{info[4]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">原产地：{{info[5]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">寿命：{{info[6]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">智商：{{info[7]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">体型：{{info[8]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">毛长：{{info[9]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">体重：{{info[10]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">肩高：{{info[11]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">功能：{{info[12]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">毛色：{{info[13]}}</li>
+                                    <li style="width: 280px;">价格：{{info[14]}}</li>
+                                    </ul>
+                                    </div>
+                                    <br>
+                                    <div id='radar1' style="width: 500px; height: 300px;"></div>
+                                    <div id='radar2' style="width: 500px; height: 300px;"></div>
+                                    <script type="text/javascript">
+                                            var mychart1 = echarts.init(document.getElementById('radar1'));
+                                            option1 = {
+                                                title: {
+                                                    text: '萌宠属性'
+                                                },
+                                                tooltip: {},
+                                                legend: {
+                                                    
+                                                    bottom:5,
+
+                                                },
+
+                                                radar: {
+                                                    name: {
+                                                        textStyle: {
+                                                            color: '#fff',
+                                                            backgroundColor: '#999',
+                                                            borderRadius: 3,
+                                                            padding: [3, 5]
+                                                        }
+                                                    },
+                                                    splitNumber: 5,
+                                                
+                                                splitArea: {
+                                                            areaStyle: {
+                                                                color: ['#ffff00',
+                                                                    '#ffff33', 
+                                                                    '#ffff66',
+                                                                    '#ffff99',
+                                                                    '#ffffcc'],
+                                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                                shadowBlur: 10
+                                                            }
+                                                        },
+                                                    indicator: [
+                                                        { name: '体味程度', max: 5},
+                                                        { name: '喜叫程度', max: 5},
+                                                        { name: '饲养难度', max: 5},
+                                                        { name: '口水程度', max: 5},
+                                                        { name: '掉毛程度', max: 5},
+                                                        { name: '运动量', max: 5},
+                                                        { name: '关爱需求', max: 5}
+                                                    ]
+                                                },
+                                                series: [{
+                                                    type: 'radar',
+                                               
+                                                    lineStyle: {
+                                                                width: 3,
+                                                                color: 'rgba(0.5,0,0,1)'
+                                                            },
+                                                    data: [
+                                                        {
+                                                            value: ['{{info[15]}}','{{info[20]}}','{{info[21]}}','{{info[25]}}','{{info[26]}}','{{info[22]}}','{{info[28]}}'],
+                                                            
+                                                        }
+                                                    
+                                                    ]
+                                                }]
+                                            };
+
+                                            var mychart2 = echarts.init(document.getElementById('radar2'));
+                                            option2 = {
+                                                title: {
+                                        
+                                                },
+                                                tooltip: {},
+                                                legend: {
+                                                    
+                                                    bottom:5,
+                                    
+                                                },
+
+                                                radar: {
+                                                    name: {
+                                                        textStyle: {
+                                                            color: '#fff',
+                                                            backgroundColor: '#999',
+                                                            borderRadius: 3,
+                                                            padding: [3, 5]
+                                                        }
+                                                    },
+                                                    splitNumber: 5,
+                                                
+                                                splitArea: {
+                                                            areaStyle: {
+                                                                color: ['#ffcc00',
+                                                                    '#ffcc33', 
+                                                                    '#ffcc66',
+                                                                    '#ffcc99',
+                                                                    '#ffcccc'],
+                                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                                shadowBlur: 10
+                                                            }
+                                                        },
+                                                    indicator: [
+                                                        { name: '耐热程度', max: 5},
+                                                        { name: '耐寒程度', max: 5},
+                                                        { name: '友善程度', max: 5},
+                                                        { name: '黏人程度', max: 5},
+                                                        { name: '护家程度', max: 5},
+                                                        { name: '美容程度', max: 5},
+                                                        { name: '可训程度', max: 5}
+                                                    ]
+                                                },
+                                                series: [{
+                                                    type: 'radar',
+                                                   
+                                                    lineStyle: {
+                                                                width: 3,
+                                                                color: 'rgba(0,0,0.5,1)'
+                                                            },
+                                                    data: [
+                                                        {
+                                                            value: ['{{info[16]}}','{{info[17]}}','{{info[18]}}','{{info[19]}}','{{info[23]}}','{{info[24]}}','{{info[27]}}'],
+                                                      
+                                                        }
+                                                    
+                                                    ]
+                                                }]
+                                            };
+                                            mychart1.setOption(option1);
+                                            mychart2.setOption(option2);
+                                        
+                                    </script>
+
+                                    <h2 class="blog-title blog-title-sm">发展起源</h2>
+                                    <p>{{info[-2]}}</p>
+                                    <h2 class="blog-title blog-title-sm">品种特点</h2>
+                                    <p>{{info[-5]}}</p>
+                                    <h2 class="blog-title blog-title-sm">养宠知识</h2>
+                                    <p>{{info[-4]}}</p>
+                                    <h2 class="blog-title blog-title-sm">注意事项</h2>
+                                    <p>{{info[-3]}}</p>
+                                {% else %}
+                                    <div>
+                                    <ul style="width: 580px;">
+                                    <li style="width: 280px;float: left;display: block;">中文名：{{info[1]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">别名：{{info[3]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">外文名：{{info[4]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">原产地：{{info[5]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">寿命：{{info[6]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">体型：{{info[8]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">毛长：{{info[9]}}</li>
+                                    <li style="width: 280px;float: left;display: block;">价格：{{info[14]}}</li>
+                                    </ul>
+                                </div>
+                                    <div style="float: left;">
+                                        <br>
+                                    <h2 class="blog-title blog-title-sm">品种特点</h2>
+                                    <p>{{info[-5]}}</p>
+                                    </div>
+                                    <div id='radar' style="width: 500px; height: 300px; float: left;"></div>
+                                    <script type="text/javascript">
+                                    var mychart = echarts.init(document.getElementById('radar'));
+                                            option = {
+                                                title: {
+                                           
+                                                },
+                                                tooltip: {},
+                                                legend: {
+                                                    
+                                                    bottom:5,
+                                       
+                                                },
+
+                                                radar: {
+                                                    name: {
+                                                        textStyle: {
+                                                            color: '#fff',
+                                                            backgroundColor: '#999',
+                                                            borderRadius: 3,
+                                                            padding: [3, 5]
+                                                        }
+                                                    },
+                                                    splitNumber: 5,
+                                                
+                                                splitArea: {
+                                                            areaStyle: {
+                                                                color: ['#ffcc00',
+                                                                    '#ffcc33', 
+                                                                    '#ffcc66',
+                                                                    '#ffcc99',
+                                                                    '#ffcccc'],
+                                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                                shadowBlur: 10
+                                                            }
+                                                        },
+                                                    indicator: [
+                                                        { name: '喜叫程度', max: 5},
+                                                        { name: '饲养难度', max: 5},
+                                                        { name: '美容程度', max: 5},
+                                                        { name: '可训程度', max: 5},
+                                                        { name: '掉毛程度', max: 5}
+                                                    ]
+                                                },
+                                                series: [{
+                                                    type: 'radar',
+                                 
+                                                    lineStyle: {
+                                                                width: 3,
+                                                                color: 'rgba(0,0,0.5,1)'
+                                                            },
+                                                    data: [
+                                                        {
+                                                            value: ['{{info[-14]}}','{{info[-13]}}','{{info[-10]}}','{{info[-7]}}','{{info[-8]}}','{{info[24]}}','{{info[27]}}'],
+                                                        }
+                                                    ]
+                                                }]
+                                            };
+                                            mychart.setOption(option);
+                                        
+                                    </script>
+
+                                    {% endif %}
+                                    <div >
+                                        <div class="col-xl-6 col-lg-12 col-md-6" style="float: right;">
+                                            <div class="blog-share-icon text-left text-md-right">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post-comments-form pt-40" style="float: left;">
+                                    <div class="details-title mb-30">
+                                        <h2>我的留言</h2>
+                                    </div>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your Comments"></textarea>
+                                                <button class="btn brand-btn" type="submit">发表评论</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 sidebar-blog right-side">
+                            <div class="widget">
+                                <h4 class="widget-title">在这里搜索</h4>
+                                <div class="sidebar-form">
+                                    <form action="home.html" method="post">
+                                        <input type="text" placeholder="Search" name="userinput"/>
+                                        <button type="submit">
+                                            <span class="lnr lnr-magnifier"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <h4 class="widget-title">猜你喜欢</h4>
+                                <div class="sidebar-rc-post">
+                                    <ul>
+                                        <li>
+                                            <div class="rc-post-thumb">
+                                                <a href="detail?id={{adv[0][0]}}">
+                                                    <img src="{{rcimgs[0]}}" alt="" style="width: 90px;height: 70px;"/>
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="detail?id={{adv[0][0]}}">{{adv[0][1]}}</a>
+                                                </h4>
+                                                <div class="widget-date">{{adv[0][4]}}</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rc-post-thumb">
+                                                <a href="detail?id={{adv[1][0]}}">
+                                                    <img src="{{rcimgs[1]}}" alt="" style="width: 90px;height: 70px;"/>
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="detail?id={{adv[1][0]}}">{{adv[1][1]}}</a>
+                                                </h4>
+                                                <div class="widget-date">{{adv[1][4]}}</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rc-post-thumb">
+                                                <a href="detail?id={{adv[2][0]}}">
+                                                    <img src="{{rcimgs[2]}}" alt="" style="width: 90px;height: 70px;"/>
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="detail?id={{adv[2][0]}}">{{adv[2][1]}}</a>
+                                                </h4>
+                                                <div class="widget-date">{{adv[2][4]}}</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rc-post-thumb">
+                                                <a href="detail?id={{adv[3][0]}}">
+                                                    <img src="{{rcimgs[3]}}" alt="" style="width: 90px;height: 70px;"/>
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="detail?id={{adv[3][0]}}">{{adv[3][1]}}</a>
+                                                </h4>
+                                                <div class="widget-date">{{adv[3][4]}}</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rc-post-thumb">
+                                                <a href="detail?id={{adv[4][0]}}">
+                                                    <img src="{{rcimgs[4]}}" alt="" style="width: 90px;height: 70px;"/>
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="detail?id={{adv[4][0]}}">{{adv[4][1]}}</a>
+                                                </h4>
+                                                <div class="widget-date">{{adv[4][4]}}</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rc-post-thumb">
+                                                <a href="detail?id={{adv[5][0]}}">
+                                                    <img src="{{rcimgs[5]}}" alt="" style="width: 90px;height: 70px;"/>
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="detail?id={{adv[5][0]}}">{{adv[5][1]}}</a>
+                                                </h4>
+                                                <div class="widget-date">{{adv[5][4]}}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="black-bg">
+                <div class="widget-area pt-70 pb-30">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget" >
+                                    <img class="mb-30" src="/static/img/logo/logo-white.png" alt="">
+                                    <p style="color: whitesmoke;">Ocean turns converted,</p>
+                                    <p style="color: whitesmoke;;">where beloved fish dwell.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-6 mb-30 d-lg-none d-xl-block">
+                                <div class="footer-widget">
+                                    <h3>Site links</h3>
+                                    <ul class="footer-link">
+                                        <li ><a href="/home" style="color: whitesmoke;">首页</a></li>
+                                        <li><a href="/dog" style="color: whitesmoke;">宠物大全</a></li>
+                                        <li><a href="/service" style="color: whitesmoke;">宠物服务</a></li>
+                                        <li><a href="/map-polygon" style="color: whitesmoke;">数据可视</a></li>
+                                        <li><a href="/about" style="color: whitesmoke;">关于我们</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <h3>Contact Us</h3>
+                                    <ul class="footer-info">
+                                        <li style="color: aqua;">Great tribute to Group 6</li>
+                                        <li style="color: aquamarine;">who built the site with joint efforts.</li>
+                                        <li style="color: cornsilk;">Shanghai Jiao Tong University</li>
+                                        <li style="color: cornsilk;">No.800, Dongchuan Road, Shanghai, China</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area pt-25 pb-25">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="footer-menu text-center  text-lg-right">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#" style="color: gainsboro;"> Introduction to Engineering for Electronic Information (Class B)</a></li>
+                                            <li><a href="#" style="color: gainsboro;"> 电类工程导论（B类）课程作业，谢绝他用</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="/static/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="/static/js/popper.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/isotope.pkgd.min.js"></script>
+        <script src="/static/js/jquery.magnific-popup.min.js"></script>
+        <script src="/static/js/jquery.nice-select.min.js"></script>
+        <script src="/static/js/jquery.meanmenu.min.js"></script>
+        <script src="/static/js/jquery.counterup.min.js"></script>
+        <script src="/static/js/waypoints.min.js"></script>
+        <script src="/static/js/slick.min.js"></script>
+        <script src="/static/js/plugins.js"></script>
+        <script src="/static/js/main.js"></script>
+        <script src="/static/js/echarts.js"></script>
+        <script src="/static/js/jquery.js"></script>
+    </body>
+</html>

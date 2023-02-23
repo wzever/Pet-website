@@ -1,0 +1,16 @@
+<style type="text/css">
+        #BJ{            /*图片居中 */
+             text-align: center;     
+        }
+        #img{           /*图片宽度，高度 */
+            width: 1280px;
+            height: 690px;
+        }
+        #ol{
+            position: absolute;    /* 绝对定位 */
+            bottom: 85px;       /* 高度 */
+            width: 100%;        /* 宽度 */
+            text-align: center;  /* 居中*/
+            right: 15px;
+        }
+    </style>

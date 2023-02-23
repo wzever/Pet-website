@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>宠物特点可视化</title>
+        <script src="/static/js/echarts.js"></script>
+        <script type="text/javascript" src="/static/宠物特点可视化1_files/echarts.min.js.下载"></script>
+        <script type="text/javascript" src="/static/宠物特点可视化1_files/jquery.min.js.下载"></script>
+        <script type="text/javascript" src="/static/宠物特点可视化1_files/jquery-ui.min.js.下载"></script>
+        <script type="text/javascript" src="/static/宠物特点可视化1_files/ResizeSensor.js.下载"></script>
+
+            <link rel="stylesheet" href="/static/宠物特点可视化1_files/jquery-ui.css">
+            <!-- All css here -->
+            <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+            <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="/static/css/slick.css">
+            <link rel="stylesheet" href="/static/css/magnific-popup.css">
+            <link rel="stylesheet" href="/static/css/nice-select.css">
+            <link rel="stylesheet" href="/static/css/linearicons.css">
+            <link rel="stylesheet" href="/static/css/meanmenu.css">
+            <link rel="stylesheet" href="/static/css/default.css">
+            <link rel="stylesheet" href="/static/css/style.css">
+            <link rel="stylesheet" href="/static/css/responsive.css">
+                    <!-- All js here -->
+        <script src="/static/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="/static/js/popper.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/isotope.pkgd.min.js"></script>
+        <script src="/static/js/jquery.magnific-popup.min.js"></script>
+        <script src="/static/js/jquery.nice-select.min.js"></script>
+        <script src="/static/js/jquery.meanmenu.min.js"></script>
+        <script src="/static/js/jquery.counterup.min.js"></script>
+        <script src="/static/js/waypoints.min.js"></script>
+        <script src="/static/js/slick.min.js"></script>
+        <script src="/static/js/plugins.js"></script>
+        <script src="/static/js/main.js"></script>
+        <script src="/static/js/echarts.js"></script>
+        <script src="/static/js/jquery.js"></script>
+</head>
+<header>
+    <div style="background-color: white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-3"> 
+                    <div class="logo">
+                        <img src="/static/img/logo/logo_cat_small2.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="col-xl-9 col-lg-9">
+                    <div class="main-menu f-right">
+                        <nav id="mobile-menu">
+                            <ul>
+                                <li>
+                                    <a href="home">首页</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="dog.html">宠物大全</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="dog.html">宠物狗</a>
+                                        </li>
+                                        <li>
+                                            <a href="cat.html">宠物猫</a>
+                                        </li>
+                                        <li>
+                                            <a href="other.html">其他宠物</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="service.html">宠物服务</a>
+                 
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="service1.html">宠物医疗</a>
+                                        </li>
+                                        <li>
+                                            <a href="service2.html">宠物养护</a>
+                                        </li>
+                                        <li>
+                                            <a href="service3.html">宠物训练</a>
+                                        </li>
+                                        <li>
+                                            <a href="service4.html">宠物搞笑</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="map-polygon.html">数据可视化</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="map-polygon.html">宠物地图</a>
+                                        </li>
+                                        <li>
+                                            <a href="map2.html">特征一览</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="AboutUs.html">关于我们</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="/about">想说的话</a>
+                                        </li>
+                                        <li>
+                                            <a href="/members">成员介绍</a>
+                                        </li>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body style="background-color: rgb(238, 121, 66); cursor: auto;">
+    <style>.box {  }; </style>
+        <button onclick="downloadCfg()">Save Config</button>
+    <div class="box">
+                <div id="7c1be543874642d1b8d29400f2e4b540" class="chart-container ui-resizable ui-draggable ui-draggable-handle" style="width: 1205px; height: 706px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; border-style: dashed; border-width: 1px; left: 89px; top: 8px;" _echarts_instance_="ec_1640420044271"><div style="position: relative; width: 1205px; height: 706px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1807" height="1059" style="position: absolute; left: 0px; top: 0px; width: 1205px; height: 706px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1217px; height: 718px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
+    <script>
+        var chart_7c1be543874642d1b8d29400f2e4b540 = echarts.init(
+            document.getElementById('7c1be543874642d1b8d29400f2e4b540'), 'white', {renderer: 'canvas'});
+        var option_7c1be543874642d1b8d29400f2e4b540 = {
+    "backgroundColor": "#FFE7BA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6570\u91cf",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "0.5",
+                    83
+                ],
+                [
+                    "1.0",
+                    71
+                ],
+                [
+                    "1.5",
+                    29
+                ],
+                [
+                    "2.0",
+                    79
+                ],
+                [
+                    "2.5",
+                    13
+                ],
+                [
+                    "3.0",
+                    34
+                ],
+                [
+                    "3.5",
+                    1
+                ],
+                [
+                    "4.0",
+                    11
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6570\u91cf"
+            ],
+            "selected": {
+                "\u6570\u91cf": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "0.5",
+                "1.0",
+                "1.5",
+                "2.0",
+                "2.5",
+                "3.0",
+                "3.5",
+                "4.0"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u5404\u5ba0\u7269\u4f53\u5473\u7a0b\u5ea6\u6298\u7ebf\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_7c1be543874642d1b8d29400f2e4b540.setOption(option_7c1be543874642d1b8d29400f2e4b540);
+    </script>
+<br>                <div id="91d38705816f46e0a7c13d0824846f73" class="chart-container ui-resizable ui-draggable ui-draggable-handle" style="width: 1206px; height: 717px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; border-style: dashed; border-width: 1px; left: 89px; top: -5px;" _echarts_instance_="ec_1640420044272"><div style="position: relative; width: 1206px; height: 717px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1809" height="1075" style="position: absolute; left: 0px; top: 0px; width: 1206px; height: 717px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 802px; top: 181px; pointer-events: none;"><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#c23531;"></span>中型: 153</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1218px; height: 729px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
+    <script>
+        var chart_91d38705816f46e0a7c13d0824846f73 = echarts.init(
+            document.getElementById('91d38705816f46e0a7c13d0824846f73'), 'white', {renderer: 'canvas'});
+        var option_91d38705816f46e0a7c13d0824846f73 = {
+    "backgroundColor": "#FFE7BA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u4e2d\u578b",
+                    "value": 153
+                },
+                {
+                    "name": "\u5927\u578b",
+                    "value": 95
+                },
+                {
+                    "name": "\u5c0f\u578b",
+                    "value": 94
+                },
+                {
+                    "name": "\u8f83\u5927",
+                    "value": 3
+                },
+                {
+                    "name": "\u8f83\u5c0f",
+                    "value": 1
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u4e2d\u578b",
+                "\u5927\u578b",
+                "\u5c0f\u578b",
+                "\u8f83\u5927",
+                "\u8f83\u5c0f"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u5404\u5ba0\u7269\u4f53\u578b\u5360\u6bd4\u60c5\u51b5\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_91d38705816f46e0a7c13d0824846f73.setOption(option_91d38705816f46e0a7c13d0824846f73);
+    </script>
+<br>                <div id="5db940cdd09247f79f4b52d0fefd7412" class="chart-container ui-resizable ui-draggable ui-draggable-handle" style="width: 1207px; height: 725px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; border-style: dashed; border-width: 1px; left: 89px; top: -10px;" _echarts_instance_="ec_1640420044273"><div style="position: relative; width: 1207px; height: 725px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1810" height="1087" style="position: absolute; left: 0px; top: 0px; width: 1207px; height: 725px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1219px; height: 737px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
+    <script>
+        var chart_5db940cdd09247f79f4b52d0fefd7412 = echarts.init(
+            document.getElementById('5db940cdd09247f79f4b52d0fefd7412'), 'white', {renderer: 'canvas'});
+        var option_5db940cdd09247f79f4b52d0fefd7412 = {
+    "backgroundColor": "#FFE7BA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6570\u91cf",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "0.5",
+                    151
+                ],
+                [
+                    "1.0",
+                    16
+                ],
+                [
+                    "1.5",
+                    18
+                ],
+                [
+                    "2.0",
+                    13
+                ],
+                [
+                    "2.5",
+                    4
+                ],
+                [
+                    "3.0",
+                    31
+                ],
+                [
+                    "3.5",
+                    54
+                ],
+                [
+                    "4.0",
+                    43
+                ],
+                [
+                    "4.5",
+                    8
+                ],
+                [
+                    "5.0",
+                    35
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6570\u91cf"
+            ],
+            "selected": {
+                "\u6570\u91cf": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "0.5",
+                "1.0",
+                "1.5",
+                "2.0",
+                "2.5",
+                "3.0",
+                "3.5",
+                "4.0",
+                "4.5",
+                "5.0"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u5404\u5ba0\u7269\u9972\u517b\u96be\u5ea6\u6298\u7ebf\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_5db940cdd09247f79f4b52d0fefd7412.setOption(option_5db940cdd09247f79f4b52d0fefd7412);
+    </script>
+<br>                <div id="bb158a9dce154c6e91ea4a69b0143d8c" class="chart-container ui-resizable ui-draggable ui-draggable-handle" style="width: 1209px; height: 713px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; border-style: dashed; border-width: 1px; left: 89px; top: -8px;" _echarts_instance_="ec_1640420044274"><div style="position: relative; width: 1209px; height: 713px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1813" height="1069" style="position: absolute; left: 0px; top: 0px; width: 1209px; height: 713px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 675px; top: 629px; pointer-events: none;">数量<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#c23531;"></span>玩赏犬: 25</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1221px; height: 725px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
+    <script>
+        var chart_bb158a9dce154c6e91ea4a69b0143d8c = echarts.init(
+            document.getElementById('bb158a9dce154c6e91ea4a69b0143d8c'), 'white', {renderer: 'canvas'});
+        var option_bb158a9dce154c6e91ea4a69b0143d8c = {
+    "backgroundColor": "#FFE7BA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u6570\u91cf",
+            "data": [
+                132,
+                48,
+                2,
+                1,
+                41,
+                6,
+                5,
+                12,
+                24,
+                53,
+                25,
+                3,
+                10,
+                1,
+                1,
+                1,
+                7,
+                1,
+                3
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6570\u91cf"
+            ],
+            "selected": {
+                "\u6570\u91cf": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\u4f34\u4fa3\u72ac",
+                "\u5176\u5b83",
+                "\u5176\u5b83\u989c\u8272",
+                "\u5496\u5561\u8272",
+                "\u5b88\u536b\u72ac",
+                "\u5bfc\u76f2\u72ac",
+                "\u641c\u67e5\u72ac",
+                "\u6897\u7c7b\u72ac",
+                "\u7267\u7f8a\u72ac",
+                "\u730e\u67aa\u72ac",
+                "\u73a9\u8d4f\u72ac",
+                "\u767d\u8272",
+                "\u770b\u5bb6\u72ac",
+                "\u84dd\u8272",
+                "\u8910\u8272",
+                "\u89c2\u8d4f\u72ac",
+                "\u96ea\u6a47\u72ac",
+                "\u9ec4\u8272",
+                "\u9ed1\u8272"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u5404\u5ba0\u7269\u529f\u80fd\u6570\u91cf\u67f1\u5f62\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_bb158a9dce154c6e91ea4a69b0143d8c.setOption(option_bb158a9dce154c6e91ea4a69b0143d8c);
+    </script>
+<br>                <div id="8a813db20b9040689ce5b751a117306d" class="chart-container ui-resizable ui-draggable ui-draggable-handle" style="width: 1212px; height: 731px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; border-style: dashed; border-width: 1px; left: 88px; top: 0px;" _echarts_instance_="ec_1640420044275"><div style="position: relative; width: 1212px; height: 731px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1818" height="1096" style="position: absolute; left: 0px; top: 0px; width: 1212px; height: 731px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 684px; top: 658px; pointer-events: none;">数量<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#c23531;"></span>2.5: 13</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1224px; height: 743px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
+    <script>
+        var chart_8a813db20b9040689ce5b751a117306d = echarts.init(
+            document.getElementById('8a813db20b9040689ce5b751a117306d'), 'white', {renderer: 'canvas'});
+        var option_8a813db20b9040689ce5b751a117306d = {
+    "backgroundColor": "#FFE7BA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u6570\u91cf",
+            "data": [
+                83,
+                71,
+                29,
+                79,
+                13,
+                34,
+                1,
+                11
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6570\u91cf"
+            ],
+            "selected": {
+                "\u6570\u91cf": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "0.5",
+                "1.0",
+                "1.5",
+                "2.0",
+                "2.5",
+                "3.0",
+                "3.5",
+                "4.0"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u5404\u5ba0\u7269\u53cb\u5584\u7a0b\u5ea6\u67f1\u5f62\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_8a813db20b9040689ce5b751a117306d.setOption(option_8a813db20b9040689ce5b751a117306d);
+    </script>
+<br>                <div id="560472a32e1e4b0d8beb4d4644124891" class="chart-container ui-resizable ui-draggable ui-draggable-handle" style="width: 1213px; height: 700px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; border-style: dashed; border-width: 1px; left: 88px; top: -4px;" _echarts_instance_="ec_1640420044276"><div style="position: relative; width: 1213px; height: 700px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1819" height="1050" style="position: absolute; left: 0px; top: 0px; width: 1213px; height: 700px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 719px; top: 136px; pointer-events: none;"><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#61a0a8;"></span>短毛: 164</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1225px; height: 712px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
+    <script>
+        var chart_560472a32e1e4b0d8beb4d4644124891 = echarts.init(
+            document.getElementById('560472a32e1e4b0d8beb4d4644124891'), 'white', {renderer: 'canvas'});
+        var option_560472a32e1e4b0d8beb4d4644124891 = {
+    "backgroundColor": "#FFE7BA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u65e0\u6bdb",
+                    "value": 15
+                },
+                {
+                    "name": "\u6709\u957f\u6709\u77ed",
+                    "value": 1
+                },
+                {
+                    "name": "\u77ed\u6bdb",
+                    "value": 164
+                },
+                {
+                    "name": "\u957f\u6bdb",
+                    "value": 154
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u65e0\u6bdb",
+                "\u6709\u957f\u6709\u77ed",
+                "\u77ed\u6bdb",
+                "\u957f\u6bdb"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u5404\u5ba0\u7269\u6bdb\u957f\u5360\u6bd4\u60c5\u51b5\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_560472a32e1e4b0d8beb4d4644124891.setOption(option_560472a32e1e4b0d8beb4d4644124891);
+    </script>
+<br>    </div>
+    <script>
+            $('#7c1be543874642d1b8d29400f2e4b540').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#7c1be543874642d1b8d29400f2e4b540>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#7c1be543874642d1b8d29400f2e4b540'), function() { chart_7c1be543874642d1b8d29400f2e4b540.resize()});
+            $('#91d38705816f46e0a7c13d0824846f73').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#91d38705816f46e0a7c13d0824846f73>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#91d38705816f46e0a7c13d0824846f73'), function() { chart_91d38705816f46e0a7c13d0824846f73.resize()});
+            $('#5db940cdd09247f79f4b52d0fefd7412').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#5db940cdd09247f79f4b52d0fefd7412>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#5db940cdd09247f79f4b52d0fefd7412'), function() { chart_5db940cdd09247f79f4b52d0fefd7412.resize()});
+            $('#bb158a9dce154c6e91ea4a69b0143d8c').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#bb158a9dce154c6e91ea4a69b0143d8c>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#bb158a9dce154c6e91ea4a69b0143d8c'), function() { chart_bb158a9dce154c6e91ea4a69b0143d8c.resize()});
+            $('#8a813db20b9040689ce5b751a117306d').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#8a813db20b9040689ce5b751a117306d>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#8a813db20b9040689ce5b751a117306d'), function() { chart_8a813db20b9040689ce5b751a117306d.resize()});
+            $('#560472a32e1e4b0d8beb4d4644124891').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#560472a32e1e4b0d8beb4d4644124891>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#560472a32e1e4b0d8beb4d4644124891'), function() { chart_560472a32e1e4b0d8beb4d4644124891.resize()});
+            var charts_id = ['7c1be543874642d1b8d29400f2e4b540','91d38705816f46e0a7c13d0824846f73','5db940cdd09247f79f4b52d0fefd7412','bb158a9dce154c6e91ea4a69b0143d8c','8a813db20b9040689ce5b751a117306d','560472a32e1e4b0d8beb4d4644124891'];
+function downloadCfg () {
+    const fileName = 'chart_config.json'
+    let downLink = document.createElement('a')
+    downLink.download = fileName
+
+    let result = []
+    for(let i=0; i<charts_id.length; i++) {
+        chart = $('#'+charts_id[i])
+        result.push({
+            cid: charts_id[i],
+            width: chart.css("width"),
+            height: chart.css("height"),
+            top: chart.offset().top + "px",
+            left: chart.offset().left + "px"
+        })
+    }
+
+    let blob = new Blob([JSON.stringify(result)])
+    downLink.href = URL.createObjectURL(blob)
+    document.body.appendChild(downLink)
+    downLink.click()
+    document.body.removeChild(downLink)
+}
+    </script>
+
+            <!-- footer start -->
+            <footer class="black-bg">
+                <div class="widget-area pt-70 pb-30">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget" >
+                                    <img class="mb-30" src="/static/img/logo/logo-white.png" alt="">
+                                    <p style="color: whitesmoke;">Ocean turns converted,</p>
+                                    <p style="color: whitesmoke;;">where beloved fish dwell.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-6 mb-30 d-lg-none d-xl-block">
+                                <div class="footer-widget">
+                                    <h3>Site links</h3>
+                                    <ul class="footer-link">
+                                        <li ><a href="/home" style="color: whitesmoke;">首页</a></li>
+                                        <li><a href="/dog" style="color: whitesmoke;">宠物大全</a></li>
+                                        <li><a href="/service" style="color: whitesmoke;">宠物服务</a></li>
+                                        <li><a href="/map-polygon" style="color: whitesmoke;">数据可视</a></li>
+                                        <li><a href="/about" style="color: whitesmoke;">关于我们</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <h3>Contact Us</h3>
+                                    <ul class="footer-info">
+                                        <li style="color: aqua;">Great tribute to Group 6</li>
+                                        <li style="color: aquamarine;">who built the site with joint efforts.</li>
+                                        <li style="color: cornsilk;">Shanghai Jiao Tong University</li>
+                                        <li style="color: cornsilk;">No.800, Dongchuan Road, Shanghai, China</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area pt-25 pb-25">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="footer-menu text-center  text-lg-right">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#" style="color: gainsboro;"> Introduction to Engineering for Electronic Information (Class B)</a></li>
+                                            <li><a href="#" style="color: gainsboro;"> 电类工程导论（B类）课程作业，谢绝他用</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</body></html>
